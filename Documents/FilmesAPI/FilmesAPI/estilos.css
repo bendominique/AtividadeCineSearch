@@ -1,0 +1,222 @@
+:root{
+    --md-dark-color: #1d1d1d;
+    --dark-color: #171717;
+    --light-dark-color: #292929;
+    --yellow-color: #d4aa11;
+}
+
+img{
+    width: 100%;
+}
+
+.container-pesquisa{
+    background-color: var(--md-dark-color);
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-pesquisa h3{
+    align-self: center;
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.container-pesquisa .controlar-formato{
+    padding: 0.5rem 0.2rem;
+    font-size: 1.4rem;
+    border: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    outline: none;
+    color: var(--light-dark-color);
+    width: 350px;
+}
+
+.filme-pesquisado{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.filme-pesquisado span{
+    color: red;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.filmes-pesquisados-info span{
+    color: red;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.filme-pesquisado h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.filmes-pesquisados-info p{
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.listas-pesquisa{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    max-height: 500px;
+    overflow-y: scroll;
+    z-index: 10;
+    background: var(--dark-color);
+}
+
+.listas-pesquisa p{
+    color: #fff;
+    background: var(--dark-color);
+}
+
+.listas-pesquisa .resultado-pesquisa-filme{
+    background-color: var(--light-dark-color);
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--dark-color);
+    width: calc(350px - 8px);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 200ms ease;
+}
+
+.listas-pesquisa .resultado-pesquisa-filme:hover{
+    background-color: #f1f1f1;    
+}
+
+/* .resultado-pesquisa-filme{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.thumbnail-filme-pesquisado img{
+    width: 100px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+/* Scrollbar (WebKit only — modern Chrome/Safari) */
+.resultado-pesquisa-filme::-webkit-scrollbar{
+    width: 8px;
+}
+
+.resultado-pesquisa-filme::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.resultado-pesquisa-filme::-webkit-scrollbar-thumb{
+    background-color: var(--yellow-color);
+    border-radius: 10px;
+}
+
+.esconder-lista-pesquisa{
+    display: none;
+}
+
+.resultado-container{
+    margin-top: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.resultado-pesquisa-filme h3{
+    color: Red;
+}
+
+.poster-filme img{
+    max-width: 300px;
+    margin: 0 auto;
+    border: 4px solid #fff;
+}
+
+/* .caixa-pesquisar-filmes .lista-de-filmes{
+    background-color: var(--light-dark-color);
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--dark-color);
+    width: calc(350px - 8px);
+    color: #000;
+    cursor: pointer;
+    -webkit-transition: background-color 200ms ease;
+    -o-transition: background-color 200ms ease;
+    transition: background-color 200ms ease;
+} */
+
+
+/* .listas-de-filmes .fotos-filmes-pesquisados:hover{
+     background-color: #1f1f1f;
+}
+
+.descricaoFilme{
+    padding: 3rem 0;
+}
+
+.foto-principal-filme img{
+    max-width: 300px;
+    margin: 0 auto;
+    border: 4px solid #fff;
+} */
+
+/* 
+.esconder-filme-da-lista{
+    display: none;
+}
+
+.informacoes-filme .ano-filme{
+    font-weight: 500;
+}
+.informacoes-filme .idade-min-filme{
+    background-color: var(--yellow-color);
+    padding: 0.4rem;
+    margin: 0 0.4rem;
+    border-radius: 3px;
+    font-weight: 600;
+}
+.informacoes-filme .data-publicacao-filme{
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+.informacoes-filme .escritor-filme{
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+.informacoes-filme .genero-filme{
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 3px;
+}
+.informacoes-filme .resumo-filme{
+    max-width: 400px;
+    margin: 1rem auto;
+}
+.informacoes-filme .lingua-filme{
+    color: var(--yellow-color);
+    font-style: italic;
+}
+.informacoes-filme .awards{
+    font-weight: 300;
+    font-size: 0.9rem;
+} */
